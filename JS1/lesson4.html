@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="utf-8">  
+        <title>javascrip3</title>
+       
+    </head>
+    <body>
+
+        <input type="button" value="open light" onclick="openlight();">
+        <img src="img/off.gif" alt="light" id="picture">
+        <input type="button" value="close light" onclick="closelight();">
+
+        <script>
+
+        
+            function openlight(){
+                document.getElementById('picture').src="img/on.gif";
+            }
+
+
+            function closelight(){
+                document.getElementById('picture').src="img/off.gif"
+
+            }
+        </script>
+</body>
+</html>

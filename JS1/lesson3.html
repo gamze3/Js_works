@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8">  
+        <title>javascrip3</title>
+       
+    </head>
+    <body>
+
+        <p id="result" class="test" >JAVASCRİPT OLARAK HTML'E HÜKMEDEBİLİRİM!</p>
+
+
+<!-- tek satırlık bir kod işlemi üzerinde değişiklil yapmak istiyorsak bu şekilde tek satırlık kod kullanabiliriz bir htmlş koduna js ile hükmetmek için;
+birden fazla satırlık kodlara hükmetmek gerektiğinde function yazmak gerekir. Fonksiyon her çağırıldığında hükmetme işlemini gerçekleştirebilir. -->
+     <!--   <input type="button" value="Buraya Bas!" onclick="document.getElementById('result').innerHTML='Js içeriği değiştirebildi mi?'">
+
+        <script >
+
+            document.write("Sonuç="+ );
+    
+            </script> -->
+
+
+            <input type="button" value="Buraya basmalısın!" onclick="proccess();">
+
+            <script>
+
+       /* function oluşturulup yapmak istediğim işlemi tanımladım. innerHTML tagıyla da html içerisinde işlem yapıldıktan sonra değiştirmek istediğim
+        veriyi yazdım. getelementbyıd tag'i ile id lere ulaşıyoruz. "set" girdi işlemlerinde, "get" çıktı işlemlerinde kullanılıyor.;" yeni html standartları için önemli koymayı unutma! */         
+                function proccess(){
+                    document.getElementById('result').innerHTML='Js içeriğine ulaştı ve değiştirdi!';
+                }
+            </script>
+    </body>
+</html>
